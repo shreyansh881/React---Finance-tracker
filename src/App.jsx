@@ -12,7 +12,7 @@ export default function App() {
       <Navbar />
       <main style={{ flex: 1, minHeight: 'calc(100vh - 60px)' }}>
         <Routes>
-          <Route path="/" element={<Navigate to="/dashboard" />} />
+          <Route path="/" element={<Navigate to="/dashboard" replace />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/transactions" element={<Transactions />} />
           <Route path="/transactions/new" element={<AddTransaction />} />
