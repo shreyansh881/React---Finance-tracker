@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Finance Tracker</title>
+    <script type="text/javascript">
+      // Redirect to index.html with the correct path
+      var pathSegments = window.location.pathname.split('/').filter(Boolean);
+      var redirectPath = '';
+      
+      // Skip the first segment (React---Finance-tracker) and keep the rest
+      if (pathSegments.length > 1) {
+        redirectPath = '/' + pathSegments.slice(1).join('/');
+      }
+      
+      window.location.replace('/React---Finance-tracker/index.html' + '#' + redirectPath);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
